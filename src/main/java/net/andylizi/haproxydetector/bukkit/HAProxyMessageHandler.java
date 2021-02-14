@@ -52,7 +52,7 @@ class HAProxyMessageHandler extends SimpleChannelInboundHandler<HAProxyMessage> 
         try {
             addressSetter.invokeExact(realAddress);
         } catch (Throwable e) {
-            sneakyThrow(e);
+            //sneakyThrow(e);
         }
     }
 }
